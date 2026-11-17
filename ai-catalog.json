@@ -13,7 +13,7 @@
       "description": "Check public curbside loading-bay eligibility rules and update prepared demonstration permit dossiers on PermitFlow.",
       "type": "application/a2a-agent-card+json",
       "url": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/agent-card.json",
-      "targetDigest": "sha256:2390977af27beac475b5cdf84f48d907ca705cfcea88a8b8e453091c5d45ed53",
+      "targetDigest": "sha256:226a760d16c5a2c075d025cd28aa47eb58a69ee2a1ef79d9f0a3947d0ba59ac9",
       "tags": [
         "open-agentic-web",
         "a2a",
