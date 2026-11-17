@@ -1,0 +1,43 @@
+{
+  "mediaType": "application/ai-catalog+json",
+  "version": "1.0",
+  "publisher": {
+    "identifier": "gpaschercher-sudo.github.io",
+    "displayName": "PermitFlow Civic Prep Assistant",
+    "identityType": "https-origin"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:gpaschercher-sudo.github.io:agent:permitflow_advisor",
+      "displayName": "PermitFlow Civic Prep Assistant",
+      "description": "Check public curbside loading-bay eligibility rules and update prepared demonstration permit dossiers on PermitFlow.",
+      "type": "application/a2a-agent-card+json",
+      "url": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/agent-card.json",
+      "targetDigest": "sha256:2390977af27beac475b5cdf84f48d907ca705cfcea88a8b8e453091c5d45ed53",
+      "tags": [
+        "open-agentic-web",
+        "a2a",
+        "permitflow"
+      ],
+      "publisher": {
+        "identifier": "gpaschercher-sudo.github.io",
+        "displayName": "PermitFlow Civic Prep Assistant",
+        "identityType": "dns-or-platform-subpath"
+      },
+      "extensions": {
+        "org.projectnanda": {
+          "resolutionRole": "direct-agent-card",
+          "preferredDiscovery": "agent-manifest-and-a2a",
+          "resolutionProfile": "known-subject-resolution-02"
+        },
+        "org.worldwideagenticweb": {
+          "mvpProfile": "0.2",
+          "manifestUrl": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/agent-manifest.json",
+          "networkUrl": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/permitflow_advisor.network.json",
+          "factsManifestUrl": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/facts/agent-manifest.json",
+          "factsNetworkDigest": "sha256:cb66f81e0c16cb5df52f13860187a8babc897c7f4eed42bb8998295232d0b262"
+        }
+      }
+    }
+  ]
+}

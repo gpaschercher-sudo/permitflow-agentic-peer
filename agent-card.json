@@ -1,0 +1,53 @@
+{
+  "name": "PermitFlow Civic Prep Assistant",
+  "description": "Check public curbside loading-bay eligibility rules and update prepared demonstration permit dossiers on PermitFlow.",
+  "version": "1.0.0",
+  "url": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/permitflow_advisor",
+  "supportedInterfaces": [
+    {
+      "url": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/permitflow_advisor",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "curbside-permit-dossier-prep",
+      "name": "Public Curbside Bay Notice Rules & Dossier Drafts",
+      "description": "Checks public curbside loading-bay notice windows and updates demonstration permit application drafts (never mutates municipal databases).",
+      "tags": [
+        "civic-prep",
+        "parking-bay",
+        "dossier-draft",
+        "demo-peer"
+      ]
+    }
+  ],
+  "extensions": {
+    "org.worldwideagenticweb": {
+      "mvpProfile": "0.2",
+      "manifestUrl": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/agent-manifest.json",
+      "networkUrl": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/permitflow_advisor.network.json",
+      "factsNetworkUrl": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/facts/permitflow_advisor_facts",
+      "browserExecuted": true
+    },
+    "org.projectnanda": {
+      "subjectUrnHint": "urn:air:gpaschercher-sudo.github.io:agent:permitflow_advisor",
+      "aiCatalogUrl": "https://gpaschercher-sudo.github.io/permitflow-agentic-peer/ai-catalog.json",
+      "resolutionProfile": "known-subject-resolution-02"
+    }
+  }
+}
